@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>moneytransapp</title>
+    <link rel="stylesheet" href="static/css/libs/bootstrap.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div v-show="!authed" @click="authed = !authed">
+                    <img
+                        class="clickable"
+                        style="position: absolute; top: 50%; right: -50%;"
+                        src="static/images/facebook.png"
+                        alt="facebook login img"
+                    >
+                </div>
+                <div v-show="authed">
+                    <app></app>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/libs/money.min.js"></script>
+    <script src="dist/build.js"></script>
+</body>
+</html>
