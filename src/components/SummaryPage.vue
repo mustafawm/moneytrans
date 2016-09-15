@@ -15,7 +15,7 @@
         <p>
             <strong>
                 Amount to receive:
-                <var style="color:green">AUD {{receiveValue}}</var>
+                <var style="color:green">{{selected}} {{receiveValue}}</var>
             </strong>
             <br>
             <small>
@@ -34,7 +34,14 @@
 <script>
 
 export default {
-    props: ['receiveValue', 'exRate', 'transferFee', 'ttlValue', 'currentView'],
+    props: [
+        'receiveValue',
+        'exRate',
+        'transferFee',
+        'ttlValue',
+        'currentView',
+        'selected'
+    ],
 
     data () {
         return {

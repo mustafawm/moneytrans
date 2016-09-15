@@ -10,10 +10,10 @@
         <p>
             <strong>
                 Amount to be received:
-                <var style="color:green">{{receiveValue}}</var>
+                <var style="color:green">{{selected}} {{receiveValue}}</var>
             </strong>
             <br>
-            <small><var style="color:blue">({{sendValue}} * {{exRate}})</var></small>
+            <small><var style="color:blue">(AUD {{sendValue}} &times; {{exRate}})</var></small>
         </p>
         <hr/>
         <form>
@@ -63,6 +63,7 @@ export default {
         'transferFee',
         'ttlValue',
         'currentView',
+        'selected'
     ],
 
     data () {

@@ -24,7 +24,7 @@
         </div>
         <div class="form-group">
             <label for="receiveValue">Will receive
-                <small class="text-primary">(initial amount * {{exRate}}):</small>
+                <small class="text-primary">(initial amount * exchange rate {{exRate}}):</small>
             </label>
             <div class="input-group">
                 <div class="input-group-addon">{{selected}}</div>
@@ -36,7 +36,7 @@
         </div>
         <div class="form-group">
             <label for="ttl">TTL to be deducted
-                <small class="text-primary">(initial amount + {{transferFee}}):</small>
+                <small class="text-primary">(initial amount + transfer fee:{{transferFee}}):</small>
             </label>
             <div class="input-group">
                 <div class="input-group-addon">AUD</div>

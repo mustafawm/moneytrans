@@ -1,10 +1,10 @@
 <template>
     <div class="form-group">
         <p>
-            <strong>Converting to USD:</strong>
+            <strong>Converting to {{selected}}:</strong>
             <var style="color:red">AUD {{sendValue}}</var> <strong>&times;</strong>
                 <abbr title="current market exchange rate"><var>{{exRate}}</var></abbr> &equals;
-                <var style="color:green">USD {{converted}} </var>
+                <var style="color:green">{{selected}} {{converted}} </var>
         </p>
         <p>
             <strong>Transfer fee:</strong>
@@ -22,7 +22,7 @@
 <script>
 
 export default {
-    props: ['sendValue', 'exRate', 'converted', 'transferFee', 'ttlValue'],
+    props: ['sendValue', 'exRate', 'converted', 'transferFee', 'ttlValue', 'selected'],
 
     data () {
         return {
