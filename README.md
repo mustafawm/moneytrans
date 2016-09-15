@@ -1,14 +1,13 @@
-# moneytransapp
+# MoneyTransApp
 
 > A Vue.js project
 
 **Main Components:**
 
 - The app is basically a bunch of `page-components` found in `src/`
-- Each file component contains HTML temlate, JS code (VueJS), and CSS (optional)
+- Each page-component contains its HTML template, JS code (VueJS), and CSS (optional)
 - `App.vue`: main component, wraps other components and passes props to them (child-components)
-    + Each component expects some props that it receives from its parent   
-- ConfirmationPage, InfoPage, MainPage, SummaryPage (names are self explanatory)
+    - Sub-components: ConfirmationPage, InfoPage, MainPage, SummaryPage (names are self explanatory)
 
 ## Build Setup
 
