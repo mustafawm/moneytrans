@@ -22,7 +22,14 @@
 <script>
 
 export default {
-    props: ['sendValue', 'exRate', 'receiveValue', 'transferFee', 'ttlValue', 'selected'],
+    props: [
+        'sendValue',
+        'exRate',
+        'receiveValue',
+        'transferFee',
+        'ttlValue',
+        'selected'
+    ],
 
     data () {
         return {

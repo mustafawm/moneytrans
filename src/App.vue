@@ -15,15 +15,15 @@
                 </h3>
             </div>
             <div class="panel-body">
-                <component :is="currentView"
-                    :current-view.sync = "currentView"
-                    :currencies="currencies"
-                    :send-value.sync = "sendValue"
+                <component :is = "currentView" transition = "fade" transition-mode = "out-in"
+                    :current-view.sync  = "currentView"
+                    :currencies         = "currencies"
+                    :send-value.sync    = "sendValue"
                     :receive-value.sync = "receiveValue"
-                    :ttl-value.sync = "ttlValue"
-                    :transfer-fee.sync = "transferFee"
-                    :ex-rate.sync = "exRate"
-                    :selected.sync = "currency"
+                    :ttl-value.sync     = "ttlValue"
+                    :transfer-fee.sync  = "transferFee"
+                    :ex-rate.sync       = "exRate"
+                    :selected.sync      = "currency"
                 >
 
                 </component>
@@ -94,5 +94,11 @@ export default {
 <style>
 body {
     font-family: Helvetica, sans-serif;
+}
+.fade-transition {
+  transition: opacity .3s ease;
+}
+.fade-enter, .fade-leave {
+  opacity: 0;
 }
 </style>
